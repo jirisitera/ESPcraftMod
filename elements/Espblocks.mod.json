@@ -1,0 +1,50 @@
+{
+  "_fv": 24,
+  "_type": "tag",
+  "definition": {
+    "type": "Blocks",
+    "items": [],
+    "blocks": [
+      {
+        "value": "CUSTOM:Espblockoff"
+      },
+      {
+        "value": "CUSTOM:Espblockon"
+      },
+      {
+        "value": "CUSTOM:Espblockonreceiver"
+      },
+      {
+        "value": "CUSTOM:Espblockontransmitter"
+      },
+      {
+        "value": "CUSTOM:Espblockoffreceiver"
+      },
+      {
+        "value": "CUSTOM:Espblockofftransmitter"
+      },
+      {
+        "value": "CUSTOM:Espblockoff"
+      },
+      {
+        "value": "CUSTOM:Blocktransmitteron"
+      },
+      {
+        "value": "CUSTOM:Blocktransmitteroff"
+      },
+      {
+        "value": "CUSTOM:Blockreceiveron"
+      },
+      {
+        "value": "CUSTOM:Blockreceiveroff"
+      },
+      {
+        "value": "CUSTOM:Espblockon"
+      }
+    ],
+    "functions": [],
+    "entities": [],
+    "name": "espblock",
+    "namespace": "minecraft"
+  }
+}

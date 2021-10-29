@@ -1,0 +1,907 @@
+{
+  "id_map": {},
+  "mod_elements": [
+    {
+      "name": "Guifillbox",
+      "type": "procedure",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "guifillbox",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "guistate",
+            "type": "map"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "Espblockoff",
+      "type": "block",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "espblockoff",
+      "path": "~/Blocks"
+    },
+    {
+      "name": "Receiver",
+      "type": "procedure",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "receiver",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "Transmitter",
+      "type": "procedure",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "transmitter",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "Power",
+      "type": "procedure",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "power",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "Espblock",
+      "type": "recipe",
+      "sortid": 34,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "espblock",
+      "path": "~/Other"
+    },
+    {
+      "name": "Espcraft1",
+      "type": "achievement",
+      "sortid": 36,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "espcraft_1",
+      "path": "~/Advancements"
+    },
+    {
+      "name": "Espcraft2",
+      "type": "achievement",
+      "sortid": 37,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "espcraft_2",
+      "path": "~/Advancements"
+    },
+    {
+      "name": "GetNbtPower",
+      "type": "procedure",
+      "sortid": 42,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "get_nbt_power",
+      "metadata": {
+        "return_type": "number",
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "Espguinormal",
+      "type": "gui",
+      "sortid": 48,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "espguinormal",
+      "path": "~/Other"
+    },
+    {
+      "name": "Espcraft",
+      "type": "achievement",
+      "sortid": 50,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "espcraft",
+      "path": "~/Advancements"
+    },
+    {
+      "name": "Espblocks",
+      "type": "tag",
+      "sortid": 51,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "espblocks",
+      "path": "~/Other"
+    },
+    {
+      "name": "Espcraft3",
+      "type": "achievement",
+      "sortid": 52,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "espcraft_3",
+      "path": "~/Advancements"
+    },
+    {
+      "name": "Espcraft4",
+      "type": "achievement",
+      "sortid": 53,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "espcraft_4",
+      "path": "~/Advancements"
+    },
+    {
+      "name": "Espcraft5",
+      "type": "achievement",
+      "sortid": 54,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "espcraft_5",
+      "path": "~/Advancements"
+    },
+    {
+      "name": "Espcraft6",
+      "type": "achievement",
+      "sortid": 55,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "espcraft_6",
+      "path": "~/Advancements"
+    },
+    {
+      "name": "Espcraft7",
+      "type": "achievement",
+      "sortid": 58,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "espcraft_7",
+      "path": "~/Advancements"
+    },
+    {
+      "name": "Espcraft8",
+      "type": "achievement",
+      "sortid": 59,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "espcraft_8",
+      "path": "~/Advancements"
+    },
+    {
+      "name": "Recv",
+      "type": "procedure",
+      "sortid": 66,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "recv",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "Trans",
+      "type": "procedure",
+      "sortid": 67,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "trans",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "CommTx",
+      "type": "procedure",
+      "sortid": 68,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "comm_tx",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "Blocktransmitteron",
+      "type": "block",
+      "sortid": 69,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "blocktransmitteron",
+      "path": "~/Blocks"
+    },
+    {
+      "name": "Blocktransmitteroff",
+      "type": "block",
+      "sortid": 70,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "blocktransmitteroff",
+      "path": "~/Blocks"
+    },
+    {
+      "name": "Blockreceiveron",
+      "type": "block",
+      "sortid": 71,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "blockreceiveron",
+      "path": "~/Blocks"
+    },
+    {
+      "name": "Blockreceiveroff",
+      "type": "block",
+      "sortid": 72,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "blockreceiveroff",
+      "path": "~/Blocks"
+    },
+    {
+      "name": "Turnon",
+      "type": "procedure",
+      "sortid": 73,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "turnon",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "Turnoff",
+      "type": "procedure",
+      "sortid": 74,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "turnoff",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "Replace",
+      "type": "procedure",
+      "sortid": 75,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "replace",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "EspblockOvercharged",
+      "type": "procedure",
+      "sortid": 76,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "espblock_overcharged",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "DeveloperTools",
+      "type": "keybind",
+      "sortid": 77,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "developer_tools",
+      "path": "~/Other"
+    },
+    {
+      "name": "DeveloperToolsGUI",
+      "type": "gui",
+      "sortid": 78,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "developer_tools_gui",
+      "path": "~/Other"
+    },
+    {
+      "name": "Espcraft9",
+      "type": "achievement",
+      "sortid": 79,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "espcraft_9",
+      "path": "~/Advancements"
+    },
+    {
+      "name": "DeveloperToolsOpenGUI",
+      "type": "procedure",
+      "sortid": 80,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "developer_tools_open_gui",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "EspblockCraft",
+      "type": "procedure",
+      "sortid": 81,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "espblock_craft",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "GamemodeSurvival",
+      "type": "procedure",
+      "sortid": 82,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "gamemode_survival",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "GamemodeCreative",
+      "type": "procedure",
+      "sortid": 83,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "gamemode_creative",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "GamemodeAdventure",
+      "type": "procedure",
+      "sortid": 84,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "gamemode_adventure",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "GamemodeSpectator",
+      "type": "procedure",
+      "sortid": 85,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "gamemode_spectator",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "KitBuilding",
+      "type": "procedure",
+      "sortid": 86,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "kit_building",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "KitDecoration",
+      "type": "procedure",
+      "sortid": 87,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "kit_decoration",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "KitRedstone",
+      "type": "procedure",
+      "sortid": 88,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "kit_redstone",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "KitEquipment",
+      "type": "procedure",
+      "sortid": 89,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "kit_equipment",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "Espblockon",
+      "type": "block",
+      "sortid": 90,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "espblockon",
+      "path": "~/Blocks"
+    }
+  ],
+  "variable_elements": [
+    {
+      "name": "version",
+      "type": "string",
+      "scope": "map",
+      "value": "v.1.0.3"
+    },
+    {
+      "name": "last_url",
+      "type": "string",
+      "scope": "global",
+      "value": "\"\""
+    }
+  ],
+  "sound_elements": [],
+  "language_map": {
+    "en_us": {
+      "advancements.espcraft_8.title": "Channels do be changin\u0027!",
+      "block.espcraft.espblockon": "ESPblock",
+      "advancements.espcraft_1.title": "Signal Sender",
+      "key.espcraft.developer_tools": "Developer Tools",
+      "advancements.espcraft_6.title": "Hello hello, does anybody copy?",
+      "advancements.espcraft_3.title": "Redstone Manufacturer",
+      "block.espcraftmod.blocktransmitteroff": "Blocktransmitteroff",
+      "block.espcraft.blockreceiveroff": "Blockreceiveroff",
+      "block.espcraftmod.blockreceiveron": "Blockreceiveron",
+      "advancements.espcraft_5.descr": "Receive your first signal from the real world.",
+      "key.espcraftmod.developer_tools": "Developer Tools",
+      "advancements.espcraft_1.descr": "Turn your ESPblock into a Transmitter.",
+      "advancements.espcraft_7.descr": "Give your ESPblock a proper name.",
+      "block.espcraftmod.blocktransmitteron": "Blocktransmitteron",
+      "advancements.espcraft_9.title": "Power Distributor",
+      "advancements.espcraft.descr": "A tool for connecting worlds.",
+      "advancements.espcraft.title": "ESPcraft",
+      "advancements.espcraft_4.title": "Overcharged",
+      "block.espcraft.blockreceiveron": "Blockreceiveron",
+      "advancements.espcraft_4.descr": "Destroy your ESPblock using an explosion.",
+      "advancements.espcraft_7.title": "Metal Namer",
+      "advancements.espcraft_9.descr": "Turn on your ESPblock for the first time.",
+      "block.espcraftmod.espblockoff": "ESPblock",
+      "advancements.espcraft_2.descr": "Turn your ESPblock into a Receiver.",
+      "advancements.espcraft_6.descr": "Send your first signal to the real world.",
+      "block.espcraftmod.blockreceiveroff": "Blockreceiveroff",
+      "advancements.espcraft_2.title": "Connection Detection",
+      "block.espcraft.blocktransmitteroff": "Blocktransmitteroff",
+      "advancements.espcraft_5.title": "Read you loud and clear!",
+      "block.espcraft.espblockoff": "ESPblock",
+      "block.espcraft.blocktransmitteron": "Blocktransmitteron",
+      "advancements.espcraft_3.descr": "Create your first ESPblock.",
+      "advancements.espcraft_8.descr": "Connect your ESPblock to a channel."
+    },
+    "cs_cz": {
+      "advancements.espcraft_8.title": "M??i? kanál?",
+      "block.espcraft.espblockon": "ESPblock",
+      "advancements.espcraft_1.title": "Vysíla? vysílá",
+      "key.espcraft.developer_tools": "Developer Tools",
+      "advancements.espcraft_6.title": "Haló haló, je tam n?kdo?",
+      "advancements.espcraft_3.title": "Ruditová produkce",
+      "block.espcraftmod.blocktransmitteroff": "Blocktransmitteroff",
+      "block.espcraft.blockreceiveroff": "Blockreceiveroff",
+      "block.espcraftmod.blockreceiveron": "Blockreceiveron",
+      "advancements.espcraft_5.descr": "P?ijmi sv?j první signál.",
+      "key.espcraftmod.developer_tools": "Developer Tools",
+      "advancements.espcraft_1.descr": "P?em?? sv?j ESPblok na vysíla?.",
+      "advancements.espcraft_7.descr": "P?ejmenuj sv?j ESPblok",
+      "block.espcraftmod.blocktransmitteron": "Blocktransmitteron",
+      "advancements.espcraft_9.title": "Napáje?",
+      "advancements.espcraft.descr": "Nástroj na propojování sv?t?.",
+      "advancements.espcraft.title": "ESPcraft",
+      "advancements.espcraft_4.title": "P?eh?átí",
+      "block.espcraft.blockreceiveron": "Blockreceiveron",
+      "advancements.espcraft_4.descr": "Destroy your ESPblock using an explosion.",
+      "advancements.espcraft_7.title": "Kovový jmenovatel",
+      "advancements.espcraft_9.descr": "Zapni sv?j ESPblok.",
+      "block.espcraftmod.espblockoff": "ESPblock",
+      "advancements.espcraft_2.descr": "P?em?? sv?j ESPblok na p?íjma?.",
+      "advancements.espcraft_6.descr": "Pošli sv?j první signál do reálného sv?ta.",
+      "block.espcraftmod.blockreceiveroff": "Blockreceiveroff",
+      "advancements.espcraft_2.title": "Detekce signálu",
+      "block.espcraft.blocktransmitteroff": "Blocktransmitteroff",
+      "advancements.espcraft_5.title": "Slyšíme!",
+      "block.espcraft.espblockoff": "ESPblok",
+      "block.espcraft.blocktransmitteron": "Blocktransmitteron",
+      "advancements.espcraft_3.descr": "Vytvo? sv?j první ESPblok.",
+      "advancements.espcraft_8.descr": "P?ipoj sv?j ESPblok ke kanálu."
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": [
+      {
+        "name": "Advancements",
+        "children": []
+      },
+      {
+        "name": "Blocks",
+        "children": []
+      },
+      {
+        "name": "Procedures",
+        "children": []
+      },
+      {
+        "name": "Other",
+        "children": []
+      }
+    ]
+  },
+  "workspaceSettings": {
+    "modid": "espcraft",
+    "modName": "ESPcraft",
+    "version": "1.0.3",
+    "description": "A tool for connecting worlds.",
+    "author": "Nvias",
+    "websiteURL": "https://www.nvias.org",
+    "license": "All Rights Reserved",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "modPicture": "nvias_logo_new",
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.16.5",
+    "credits": "Special thanks to you, the user.",
+    "modElementsPackage": "espcraft",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202100236710
+}

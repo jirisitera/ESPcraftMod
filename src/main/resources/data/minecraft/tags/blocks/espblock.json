@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "espcraft:espblockoff",
+    "espcraft:espblockoff",
+    "espcraft:blocktransmitteron",
+    "espcraft:blocktransmitteroff",
+    "espcraft:blockreceiveron",
+    "espcraft:blockreceiveroff"
+  ]
+}

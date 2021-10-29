@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:redstone_torch"
+    },
+    "title": {
+      "translate": "advancements.espcraft_9.title"
+    },
+    "description": {
+      "translate": "advancements.espcraft_9.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "espcraft_9": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 0
+  },
+  "parent": "espcraft:espcraft_3"
+}

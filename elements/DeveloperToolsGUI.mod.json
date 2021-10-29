@@ -1,0 +1,199 @@
+{
+  "_fv": 24,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 170,
+    "height": 200,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "text": "Developer Tools",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Developer Tools",
+          "x": 176,
+          "y": 26
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Player Modes",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Player Modes",
+          "x": 184,
+          "y": 131
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "ESPcraft <VAR:version>",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "ESPcraft <VAR:version>",
+          "x": 211,
+          "y": 204
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Current Location: <x> <y> <z>",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Current Location: <x> <y> <z>",
+          "x": 140,
+          "y": 42
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Hotbar Fillers",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Hotbar Fillers",
+          "x": 179,
+          "y": 60
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Building",
+          "onClick": {
+            "name": "KitBuilding"
+          },
+          "width": 60,
+          "height": 20,
+          "name": "Building",
+          "x": 150,
+          "y": 77
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Decoration",
+          "onClick": {
+            "name": "KitDecoration"
+          },
+          "width": 60,
+          "height": 20,
+          "name": "Decoration",
+          "x": 217,
+          "y": 77
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Redstone",
+          "onClick": {
+            "name": "KitRedstone"
+          },
+          "width": 60,
+          "height": 20,
+          "name": "Redstone",
+          "x": 150,
+          "y": 102
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Equipment",
+          "onClick": {
+            "name": "KitEquipment"
+          },
+          "width": 60,
+          "height": 20,
+          "name": "Equipment",
+          "x": 217,
+          "y": 102
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Survival",
+          "onClick": {
+            "name": "GamemodeSurvival"
+          },
+          "width": 60,
+          "height": 20,
+          "name": "Survival",
+          "x": 150,
+          "y": 148
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Creative",
+          "onClick": {
+            "name": "GamemodeCreative"
+          },
+          "width": 60,
+          "height": 20,
+          "name": "Creative",
+          "x": 217,
+          "y": 148
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Adventure",
+          "onClick": {
+            "name": "GamemodeAdventure"
+          },
+          "width": 60,
+          "height": 20,
+          "name": "Adventure",
+          "x": 150,
+          "y": 172
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Spectator",
+          "onClick": {
+            "name": "GamemodeSpectator"
+          },
+          "width": 60,
+          "height": 20,
+          "name": "Spectator",
+          "x": 217,
+          "y": 172
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 10,
+      "sy": 10,
+      "ox": 1,
+      "oy": 1,
+      "snapOnGrid": false
+    }
+  }
+}

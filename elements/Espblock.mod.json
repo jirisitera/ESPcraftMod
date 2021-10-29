@@ -1,0 +1,46 @@
+{
+  "_fv": 24,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "redstone",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "Items.REDSTONE"
+      },
+      {
+        "value": "Items.COMPARATOR"
+      },
+      {
+        "value": "Items.REDSTONE"
+      },
+      {
+        "value": "Items.REPEATER"
+      },
+      {
+        "value": "Blocks.REDSTONE_BLOCK"
+      },
+      {
+        "value": "Items.REPEATER"
+      },
+      {
+        "value": "Blocks.STONE#0"
+      },
+      {
+        "value": "Blocks.STONE#0"
+      },
+      {
+        "value": "Blocks.STONE#0"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:Espblockoff"
+    },
+    "name": "espblock",
+    "namespace": "minecraft"
+  }
+}

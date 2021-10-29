@@ -1,0 +1,138 @@
+{
+  "_fv": 24,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 275,
+    "height": 150,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "text": "ESPcraft <VAR:version>",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "ESPcraft <VAR:version>",
+          "x": 261,
+          "y": 178
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Mode: <BNBT:text:Mode> / <BNBT:text:Name> / <BNBT:text:Channel>",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Mode: <BNBT:text:Mode> / <BNBT:text:Name> / <BNBT:text:Channel>",
+          "x": 81,
+          "y": 178
+        }
+      },
+      {
+        "type": "textfield",
+        "data": {
+          "placeholder": "UUID",
+          "width": 60,
+          "height": 20,
+          "name": "name",
+          "x": 106,
+          "y": 103
+        }
+      },
+      {
+        "type": "textfield",
+        "data": {
+          "placeholder": "Channel",
+          "width": 60,
+          "height": 20,
+          "name": "channel",
+          "x": 171,
+          "y": 103
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Turn to Transmitter",
+          "onClick": {
+            "name": "Transmitter"
+          },
+          "width": 120,
+          "height": 20,
+          "name": "Turn to Transmitter",
+          "x": 216,
+          "y": 138
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Turn to Receiver",
+          "onClick": {
+            "name": "Receiver"
+          },
+          "width": 120,
+          "height": 20,
+          "name": "Turn to Receiver",
+          "x": 86,
+          "y": 138
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "ESPblock location: <x> <y> <z>",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "ESPblock location: <x> <y> <z>",
+          "x": 146,
+          "y": 73
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "ESPblock Settings",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "ESPblock Settings",
+          "x": 171,
+          "y": 53
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Set Values",
+          "onClick": {
+            "name": "Guifillbox"
+          },
+          "width": 75,
+          "height": 20,
+          "name": "Set Values",
+          "x": 241,
+          "y": 103
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 10,
+      "sy": 10,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": true
+    }
+  }
+}
