@@ -602,8 +602,8 @@
   "sound_elements": [],
   "language_map": {
     "en_us": {
-      "advancements.espcraft_8.title": "Channels do be changin\u0027!",
       "block.espcraft.espblockon": "ESPblock",
+      "advancements.espcraft_8.title": "Channels do be changin\u0027!",
       "advancements.espcraft_1.title": "Signal Sender",
       "key.espcraft.developer_tools": "Developer Tools",
       "advancements.espcraft_6.title": "Hello hello, does anybody copy?",
@@ -661,7 +661,7 @@
   "workspaceSettings": {
     "modid": "espcraft",
     "modName": "ESPcraft",
-    "version": "1.0.3",
+    "version": "2.1.0",
     "description": "A tool for connecting worlds.",
     "author": "Nvias",
     "websiteURL": "https://www.nvias.org",
