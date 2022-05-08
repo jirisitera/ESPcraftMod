@@ -1,5 +1,5 @@
 modLoader="javafml"
-loaderVersion="[36,)"
+loaderVersion="[40,)"
 license="All Rights Reserved"
 
 [[mods]]
@@ -17,7 +17,7 @@ A tool for connecting worlds.
 [[dependencies.espcraft]]
     modId="minecraft"
     mandatory=true
-    versionRange="[1.16.5]"
+    versionRange="[1.18.2]"
     ordering="NONE"
     side="BOTH"
 

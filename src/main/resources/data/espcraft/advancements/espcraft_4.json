@@ -19,8 +19,5 @@
       "trigger": "minecraft:impossible"
     }
   },
-  "rewards": {
-    "experience": 0
-  },
   "parent": "espcraft:espcraft_9"
 }

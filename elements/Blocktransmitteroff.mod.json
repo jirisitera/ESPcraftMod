@@ -1,5 +1,5 @@
 {
-  "_fv": 24,
+  "_fv": 28,
   "_type": "block",
   "definition": {
     "texture": "espblock",
@@ -82,16 +82,16 @@
     "breakSound": {
       "value": ""
     },
-    "stepSound": {
-      "value": ""
-    },
-    "placeSound": {
+    "fallSound": {
       "value": ""
     },
     "hitSound": {
       "value": ""
     },
-    "fallSound": {
+    "placeSound": {
+      "value": ""
+    },
+    "stepSound": {
       "value": ""
     },
     "luminance": 0,
@@ -121,17 +121,11 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
-    "onTickUpdate": {
-      "name": "CommTx"
-    },
     "onDestroyedByExplosion": {
       "name": "EspblockOvercharged"
     },
     "onRedstoneOn": {
       "name": "Turnon"
-    },
-    "onRedstoneOff": {
-      "name": "Power"
     },
     "spawnWorldTypes": [],
     "restrictionBiomes": [],
@@ -140,6 +134,7 @@
         "value": "Blocks.STONE"
       }
     ],
+    "generationShape": "UNIFORM",
     "frequencyPerChunks": 10,
     "frequencyOnChunk": 16,
     "minGenerateHeight": 0,
