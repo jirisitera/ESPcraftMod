@@ -18,7 +18,6 @@ import espcraft.world.inventory.EspguinormalMenu;
 
 import espcraft.procedures.TransmitterProcedure;
 import espcraft.procedures.ReceiverProcedure;
-import espcraft.procedures.GuifillboxProcedure;
 
 import espcraft.EspcraftMod;
 
@@ -73,10 +72,6 @@ public class EspguinormalButtonMessage {
 		if (buttonID == 1) {
 
 			ReceiverProcedure.execute(world, x, y, z, entity);
-		}
-		if (buttonID == 2) {
-
-			GuifillboxProcedure.execute(world, x, y, z, entity, guistate);
 		}
 	}
 

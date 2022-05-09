@@ -10,7 +10,6 @@ import net.minecraft.network.chat.TextComponent;
 import net.minecraft.network.chat.Component;
 import net.minecraft.core.BlockPos;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
-import net.minecraft.client.gui.components.EditBox;
 import net.minecraft.client.gui.components.Button;
 import net.minecraft.client.Minecraft;
 
@@ -31,8 +30,6 @@ public class EspguinormalScreen extends AbstractContainerScreen<EspguinormalMenu
 	private final Level world;
 	private final int x, y, z;
 	private final Player entity;
-	EditBox name;
-	EditBox channel;
 
 	public EspguinormalScreen(EspguinormalMenu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
@@ -52,8 +49,6 @@ public class EspguinormalScreen extends AbstractContainerScreen<EspguinormalMenu
 		this.renderBackground(ms);
 		super.render(ms, mouseX, mouseY, partialTicks);
 		this.renderTooltip(ms, mouseX, mouseY);
-		name.render(ms, mouseX, mouseY, partialTicks);
-		channel.render(ms, mouseX, mouseY, partialTicks);
 	}
 
 	@Override
@@ -63,6 +58,10 @@ public class EspguinormalScreen extends AbstractContainerScreen<EspguinormalMenu
 		RenderSystem.defaultBlendFunc();
 		RenderSystem.setShaderTexture(0, texture);
 		this.blit(ms, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
+
+		RenderSystem.setShaderTexture(0, new ResourceLocation("espcraft:textures/nvias_logo_new_small.png"));
+		this.blit(ms, this.leftPos + 10, this.topPos + 8, 0, 0, 50, 50, 50, 50);
+
 		RenderSystem.disableBlend();
 	}
 
@@ -72,18 +71,12 @@ public class EspguinormalScreen extends AbstractContainerScreen<EspguinormalMenu
 			this.minecraft.player.closeContainer();
 			return true;
 		}
-		if (name.isFocused())
-			return name.keyPressed(key, b, c);
-		if (channel.isFocused())
-			return channel.keyPressed(key, b, c);
 		return super.keyPressed(key, b, c);
 	}
 
 	@Override
 	public void containerTick() {
 		super.containerTick();
-		name.tick();
-		channel.tick();
 	}
 
 	@Override
@@ -96,23 +89,25 @@ public class EspguinormalScreen extends AbstractContainerScreen<EspguinormalMenu
 					return BlockEntity.getTileData().getString(tag);
 				return "";
 			}
-		}.getValue(new BlockPos((int) x, (int) y, (int) z), "Mode")) + " / " + (new Object() {
+		}.getValue(new BlockPos((int) x, (int) y, (int) z), "Mode")) + "", 5, 133, -12829636);
+		this.font.draw(poseStack, "ESPblock location: " + x + " " + y + " " + z + "", 65, 33, -12829636);
+		this.font.draw(poseStack, "ESPblock Settings", 95, 13, -12829636);
+		this.font.draw(poseStack, "UUID: " + (new Object() {
 			public String getValue(BlockPos pos, String tag) {
 				BlockEntity BlockEntity = world.getBlockEntity(pos);
 				if (BlockEntity != null)
 					return BlockEntity.getTileData().getString(tag);
 				return "";
 			}
-		}.getValue(new BlockPos((int) x, (int) y, (int) z), "Name")) + " / " + (new Object() {
+		}.getValue(new BlockPos((int) x, (int) y, (int) z), "Name")) + "", 5, 103, -12829636);
+		this.font.draw(poseStack, "Channel: " + (new Object() {
 			public String getValue(BlockPos pos, String tag) {
 				BlockEntity BlockEntity = world.getBlockEntity(pos);
 				if (BlockEntity != null)
 					return BlockEntity.getTileData().getString(tag);
 				return "";
 			}
-		}.getValue(new BlockPos((int) x, (int) y, (int) z), "Channel")) + "", 5, 133, -12829636);
-		this.font.draw(poseStack, "ESPblock location: " + x + " " + y + " " + z + "", 65, 23, -12829636);
-		this.font.draw(poseStack, "ESPblock Settings", 95, 8, -12829636);
+		}.getValue(new BlockPos((int) x, (int) y, (int) z), "Channel")) + "", 5, 118, -12829636);
 	}
 
 	@Override
@@ -125,74 +120,16 @@ public class EspguinormalScreen extends AbstractContainerScreen<EspguinormalMenu
 	public void init() {
 		super.init();
 		this.minecraft.keyboardHandler.setSendRepeatsToGui(true);
-		name = new EditBox(this.font, this.leftPos + 30, this.topPos + 58, 60, 20, new TextComponent("UUID")) {
-			{
-				setSuggestion("UUID");
-			}
-
-			@Override
-			public void insertText(String text) {
-				super.insertText(text);
-				if (getValue().isEmpty())
-					setSuggestion("UUID");
-				else
-					setSuggestion(null);
-			}
-
-			@Override
-			public void moveCursorTo(int pos) {
-				super.moveCursorTo(pos);
-				if (getValue().isEmpty())
-					setSuggestion("UUID");
-				else
-					setSuggestion(null);
-			}
-		};
-		guistate.put("text:name", name);
-		name.setMaxLength(32767);
-		this.addWidget(this.name);
-		channel = new EditBox(this.font, this.leftPos + 95, this.topPos + 58, 60, 20, new TextComponent("Channel")) {
-			{
-				setSuggestion("Channel");
-			}
-
-			@Override
-			public void insertText(String text) {
-				super.insertText(text);
-				if (getValue().isEmpty())
-					setSuggestion("Channel");
-				else
-					setSuggestion(null);
-			}
-
-			@Override
-			public void moveCursorTo(int pos) {
-				super.moveCursorTo(pos);
-				if (getValue().isEmpty())
-					setSuggestion("Channel");
-				else
-					setSuggestion(null);
-			}
-		};
-		guistate.put("text:channel", channel);
-		channel.setMaxLength(32767);
-		this.addWidget(this.channel);
-		this.addRenderableWidget(new Button(this.leftPos + 140, this.topPos + 93, 120, 20, new TextComponent("Turn to Transmitter"), e -> {
+		this.addRenderableWidget(new Button(this.leftPos + 140, this.topPos + 68, 120, 20, new TextComponent("Turn to Transmitter"), e -> {
 			if (true) {
 				EspcraftMod.PACKET_HANDLER.sendToServer(new EspguinormalButtonMessage(0, x, y, z));
 				EspguinormalButtonMessage.handleButtonAction(entity, 0, x, y, z);
 			}
 		}));
-		this.addRenderableWidget(new Button(this.leftPos + 10, this.topPos + 93, 120, 20, new TextComponent("Turn to Receiver"), e -> {
+		this.addRenderableWidget(new Button(this.leftPos + 10, this.topPos + 68, 120, 20, new TextComponent("Turn to Receiver"), e -> {
 			if (true) {
 				EspcraftMod.PACKET_HANDLER.sendToServer(new EspguinormalButtonMessage(1, x, y, z));
 				EspguinormalButtonMessage.handleButtonAction(entity, 1, x, y, z);
-			}
-		}));
-		this.addRenderableWidget(new Button(this.leftPos + 165, this.topPos + 58, 75, 20, new TextComponent("Set Values"), e -> {
-			if (true) {
-				EspcraftMod.PACKET_HANDLER.sendToServer(new EspguinormalButtonMessage(2, x, y, z));
-				EspguinormalButtonMessage.handleButtonAction(entity, 2, x, y, z);
 			}
 		}));
 	}

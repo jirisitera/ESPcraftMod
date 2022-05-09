@@ -1,0 +1,11 @@
+{
+  "_fv": 28,
+  "_type": "command",
+  "definition": {
+    "commandName": "channel",
+    "permissionLevel": "4",
+    "onCommandExecuted": {
+      "name": "SetChannel"
+    }
+  }
+}
