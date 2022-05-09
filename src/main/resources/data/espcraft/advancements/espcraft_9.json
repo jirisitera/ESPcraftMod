@@ -19,5 +19,5 @@
       "trigger": "minecraft:impossible"
     }
   },
-  "parent": "espcraft:espcraft_3"
+  "parent": "espcraft:espcraft"
 }

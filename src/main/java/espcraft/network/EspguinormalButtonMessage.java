@@ -16,6 +16,8 @@ import java.util.HashMap;
 
 import espcraft.world.inventory.EspguinormalMenu;
 
+import espcraft.procedures.TransmitterProcedure;
+import espcraft.procedures.ReceiverProcedure;
 import espcraft.procedures.GuifillboxProcedure;
 
 import espcraft.EspcraftMod;
@@ -64,9 +66,17 @@ public class EspguinormalButtonMessage {
 		// security measure to prevent arbitrary chunk generation
 		if (!world.hasChunkAt(new BlockPos(x, y, z)))
 			return;
+		if (buttonID == 0) {
+
+			TransmitterProcedure.execute(world, x, y, z, entity);
+		}
+		if (buttonID == 1) {
+
+			ReceiverProcedure.execute(world, x, y, z, entity);
+		}
 		if (buttonID == 2) {
 
-			GuifillboxProcedure.execute(world, x, y, z, guistate);
+			GuifillboxProcedure.execute(world, x, y, z, entity, guistate);
 		}
 	}
 

@@ -2,9 +2,7 @@
   "block.espcraft.espblockon": "ESPblock",
   "advancements.espcraft_8.title": "Channels do be changin\u0027!",
   "advancements.espcraft_1.title": "Signal Sender",
-  "key.espcraft.developer_tools": "Developer Tools",
   "advancements.espcraft_6.title": "Hello hello, does anybody copy?",
-  "advancements.espcraft_3.title": "Redstone Manufacturer",
   "block.espcraftmod.blocktransmitteroff": "Blocktransmitteroff",
   "block.espcraft.blockreceiveroff": "Blockreceiveroff",
   "block.espcraftmod.blockreceiveron": "Blockreceiveron",
@@ -30,6 +28,5 @@
   "advancements.espcraft_5.title": "Read you loud and clear!",
   "block.espcraft.espblockoff": "ESPblock",
   "block.espcraft.blocktransmitteron": "Blocktransmitteron",
-  "advancements.espcraft_3.descr": "Create your first ESPblock.",
   "advancements.espcraft_8.descr": "Connect your ESPblock to a channel."
 }

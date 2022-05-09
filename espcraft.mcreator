@@ -10,6 +10,10 @@
       "metadata": {
         "dependencies": [
           {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
             "name": "guistate",
             "type": "map"
           },
@@ -41,15 +45,6 @@
       "locked_code": false,
       "registry_name": "espblockoff",
       "path": "~/Blocks"
-    },
-    {
-      "name": "Espblock",
-      "type": "recipe",
-      "sortid": 34,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "espblock",
-      "path": "~/Other"
     },
     {
       "name": "Espcraft1",
@@ -95,15 +90,6 @@
       "locked_code": false,
       "registry_name": "espblocks",
       "path": "~/Other"
-    },
-    {
-      "name": "Espcraft3",
-      "type": "achievement",
-      "sortid": 52,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "espcraft_3",
-      "path": "~/Advancements"
     },
     {
       "name": "Espcraft4",
@@ -274,24 +260,6 @@
       "path": "~/Procedures"
     },
     {
-      "name": "DeveloperTools",
-      "type": "keybind",
-      "sortid": 77,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "developer_tools",
-      "path": "~/Other"
-    },
-    {
-      "name": "DeveloperToolsGUI",
-      "type": "gui",
-      "sortid": 78,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "developer_tools_gui",
-      "path": "~/Other"
-    },
-    {
       "name": "Espcraft9",
       "type": "achievement",
       "sortid": 79,
@@ -299,192 +267,6 @@
       "locked_code": false,
       "registry_name": "espcraft_9",
       "path": "~/Advancements"
-    },
-    {
-      "name": "DeveloperToolsOpenGUI",
-      "type": "procedure",
-      "sortid": 80,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "developer_tools_open_gui",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Procedures"
-    },
-    {
-      "name": "EspblockCraft",
-      "type": "procedure",
-      "sortid": 81,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "espblock_craft",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Procedures"
-    },
-    {
-      "name": "GamemodeSurvival",
-      "type": "procedure",
-      "sortid": 82,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "gamemode_survival",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Procedures"
-    },
-    {
-      "name": "GamemodeCreative",
-      "type": "procedure",
-      "sortid": 83,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "gamemode_creative",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Procedures"
-    },
-    {
-      "name": "GamemodeAdventure",
-      "type": "procedure",
-      "sortid": 84,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "gamemode_adventure",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Procedures"
-    },
-    {
-      "name": "GamemodeSpectator",
-      "type": "procedure",
-      "sortid": 85,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "gamemode_spectator",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Procedures"
-    },
-    {
-      "name": "KitBuilding",
-      "type": "procedure",
-      "sortid": 86,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "kit_building",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Procedures"
-    },
-    {
-      "name": "KitDecoration",
-      "type": "procedure",
-      "sortid": 87,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "kit_decoration",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Procedures"
-    },
-    {
-      "name": "KitRedstone",
-      "type": "procedure",
-      "sortid": 88,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "kit_redstone",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Procedures"
-    },
-    {
-      "name": "KitEquipment",
-      "type": "procedure",
-      "sortid": 89,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "kit_equipment",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Procedures"
     },
     {
       "name": "Espblockon",
@@ -583,6 +365,159 @@
         ]
       },
       "path": "~/Procedures"
+    },
+    {
+      "name": "TurnonTransmitter",
+      "type": "procedure",
+      "sortid": 95,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "turnon_transmitter",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "TurnoffTransmitter",
+      "type": "procedure",
+      "sortid": 96,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "turnoff_transmitter",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "UpdateTransmitter",
+      "type": "procedure",
+      "sortid": 97,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "update_transmitter",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "Receiver",
+      "type": "procedure",
+      "sortid": 98,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "receiver",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "Transmitter",
+      "type": "procedure",
+      "sortid": 99,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "transmitter",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures"
     }
   ],
   "variable_elements": [
@@ -605,9 +540,7 @@
       "block.espcraft.espblockon": "ESPblock",
       "advancements.espcraft_8.title": "Channels do be changin\u0027!",
       "advancements.espcraft_1.title": "Signal Sender",
-      "key.espcraft.developer_tools": "Developer Tools",
       "advancements.espcraft_6.title": "Hello hello, does anybody copy?",
-      "advancements.espcraft_3.title": "Redstone Manufacturer",
       "block.espcraftmod.blocktransmitteroff": "Blocktransmitteroff",
       "block.espcraft.blockreceiveroff": "Blockreceiveroff",
       "block.espcraftmod.blockreceiveron": "Blockreceiveron",
@@ -633,7 +566,6 @@
       "advancements.espcraft_5.title": "Read you loud and clear!",
       "block.espcraft.espblockoff": "ESPblock",
       "block.espcraft.blocktransmitteron": "Blocktransmitteron",
-      "advancements.espcraft_3.descr": "Create your first ESPblock.",
       "advancements.espcraft_8.descr": "Connect your ESPblock to a channel."
     }
   },

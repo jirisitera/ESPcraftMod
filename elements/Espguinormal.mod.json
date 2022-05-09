@@ -62,6 +62,9 @@
         "type": "button",
         "data": {
           "text": "Turn to Transmitter",
+          "onClick": {
+            "name": "Transmitter"
+          },
           "width": 120,
           "height": 20,
           "name": "Turn to Transmitter",
@@ -73,6 +76,9 @@
         "type": "button",
         "data": {
           "text": "Turn to Receiver",
+          "onClick": {
+            "name": "Receiver"
+          },
           "width": 120,
           "height": 20,
           "name": "Turn to Receiver",

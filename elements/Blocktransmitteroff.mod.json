@@ -125,7 +125,7 @@
       "name": "EspblockOvercharged"
     },
     "onRedstoneOn": {
-      "name": "Turnon"
+      "name": "TurnonTransmitter"
     },
     "spawnWorldTypes": [],
     "restrictionBiomes": [],

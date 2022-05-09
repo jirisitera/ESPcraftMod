@@ -46,7 +46,8 @@ import io.netty.buffer.Unpooled;
 
 import espcraft.world.inventory.EspguinormalMenu;
 
-import espcraft.procedures.TurnoffProcedure;
+import espcraft.procedures.UpdateTransmitterProcedure;
+import espcraft.procedures.TurnoffTransmitterProcedure;
 import espcraft.procedures.EspblockOverchargedProcedure;
 
 import espcraft.init.EspcraftModBlocks;
@@ -96,8 +97,9 @@ public class BlocktransmitteronBlock extends Block
 		super.neighborChanged(blockstate, world, pos, neighborBlock, fromPos, moving);
 		if (world.getBestNeighborSignal(pos) > 0) {
 		} else {
-			TurnoffProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
+			TurnoffTransmitterProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
 		}
+		UpdateTransmitterProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
 	}
 
 	@Override

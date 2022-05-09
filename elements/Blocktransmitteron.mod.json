@@ -121,11 +121,14 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
+    "onNeighbourBlockChanges": {
+      "name": "UpdateTransmitter"
+    },
     "onDestroyedByExplosion": {
       "name": "EspblockOvercharged"
     },
     "onRedstoneOff": {
-      "name": "Turnoff"
+      "name": "TurnoffTransmitter"
     },
     "spawnWorldTypes": [],
     "restrictionBiomes": [],

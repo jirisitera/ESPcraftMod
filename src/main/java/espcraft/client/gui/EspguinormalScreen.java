@@ -178,8 +178,16 @@ public class EspguinormalScreen extends AbstractContainerScreen<EspguinormalMenu
 		channel.setMaxLength(32767);
 		this.addWidget(this.channel);
 		this.addRenderableWidget(new Button(this.leftPos + 140, this.topPos + 93, 120, 20, new TextComponent("Turn to Transmitter"), e -> {
+			if (true) {
+				EspcraftMod.PACKET_HANDLER.sendToServer(new EspguinormalButtonMessage(0, x, y, z));
+				EspguinormalButtonMessage.handleButtonAction(entity, 0, x, y, z);
+			}
 		}));
 		this.addRenderableWidget(new Button(this.leftPos + 10, this.topPos + 93, 120, 20, new TextComponent("Turn to Receiver"), e -> {
+			if (true) {
+				EspcraftMod.PACKET_HANDLER.sendToServer(new EspguinormalButtonMessage(1, x, y, z));
+				EspguinormalButtonMessage.handleButtonAction(entity, 1, x, y, z);
+			}
 		}));
 		this.addRenderableWidget(new Button(this.leftPos + 165, this.topPos + 58, 75, 20, new TextComponent("Set Values"), e -> {
 			if (true) {
