@@ -111,7 +111,7 @@ public class EspguinormalScreen extends AbstractContainerScreen<EspguinormalMenu
 				return "";
 			}
 		}.getValue(new BlockPos((int) x, (int) y, (int) z), "Channel")) + "", 5, 133, -12829636);
-		this.font.draw(poseStack, "ESPblock location: " + x + " " + y + " " + z + "", 70, 28, -12829636);
+		this.font.draw(poseStack, "ESPblock location: " + x + " " + y + " " + z + "", 65, 23, -12829636);
 		this.font.draw(poseStack, "ESPblock Settings", 95, 8, -12829636);
 	}
 
