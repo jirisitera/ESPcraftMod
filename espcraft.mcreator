@@ -575,15 +575,6 @@
       "path": "~/Other"
     },
     {
-      "name": "Guidebook0",
-      "type": "gui",
-      "sortid": 105,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "guidebook_0",
-      "path": "~/Other"
-    },
-    {
       "name": "Guidebook",
       "type": "item",
       "sortid": 106,
@@ -599,6 +590,206 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "guidebook_open",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "GiveGuidebook",
+      "type": "procedure",
+      "sortid": 108,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "give_guidebook",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "Guidebook1",
+      "type": "gui",
+      "sortid": 111,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "guidebook_1",
+      "path": "~/Other"
+    },
+    {
+      "name": "Guidebook2",
+      "type": "gui",
+      "sortid": 112,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "guidebook_2",
+      "path": "~/Other"
+    },
+    {
+      "name": "GuidebookPage1",
+      "type": "procedure",
+      "sortid": 113,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "guidebook_page_1",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "GuidebookPage2",
+      "type": "procedure",
+      "sortid": 114,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "guidebook_page_2",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "GuidebookPage3",
+      "type": "procedure",
+      "sortid": 115,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "guidebook_page_3",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "GuidebookPage4",
+      "type": "procedure",
+      "sortid": 116,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "guidebook_page_4",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "GuidebookPage5",
+      "type": "procedure",
+      "sortid": 117,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "guidebook_page_5",
       "metadata": {
         "dependencies": [
           {
@@ -643,8 +834,8 @@
   "sound_elements": [],
   "language_map": {
     "en_us": {
-      "block.espcraft.espblockon": "ESPblock",
       "advancements.espcraft_8.title": "Channels do be changin\u0027!",
+      "block.espcraft.espblockon": "ESPblock",
       "advancements.espcraft_1.title": "Signal Sender",
       "advancements.espcraft_6.title": "Hello hello, does anybody copy?",
       "block.espcraftmod.blocktransmitteroff": "Blocktransmitteroff",

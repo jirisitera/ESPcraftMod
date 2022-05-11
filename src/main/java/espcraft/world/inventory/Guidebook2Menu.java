@@ -18,7 +18,7 @@ import java.util.HashMap;
 
 import espcraft.init.EspcraftModMenus;
 
-public class Guidebook0Menu extends AbstractContainerMenu implements Supplier<Map<Integer, Slot>> {
+public class Guidebook2Menu extends AbstractContainerMenu implements Supplier<Map<Integer, Slot>> {
 	public final static HashMap<String, Object> guistate = new HashMap<>();
 	public final Level world;
 	public final Player entity;
@@ -27,8 +27,8 @@ public class Guidebook0Menu extends AbstractContainerMenu implements Supplier<Ma
 	private final Map<Integer, Slot> customSlots = new HashMap<>();
 	private boolean bound = false;
 
-	public Guidebook0Menu(int id, Inventory inv, FriendlyByteBuf extraData) {
-		super(EspcraftModMenus.GUIDEBOOK_0, id);
+	public Guidebook2Menu(int id, Inventory inv, FriendlyByteBuf extraData) {
+		super(EspcraftModMenus.GUIDEBOOK_2, id);
 		this.entity = inv.player;
 		this.world = inv.player.level;
 		this.internal = new ItemStackHandler(0);

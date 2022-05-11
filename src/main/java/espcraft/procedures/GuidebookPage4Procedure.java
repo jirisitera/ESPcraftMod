@@ -21,14 +21,16 @@ import net.minecraft.client.Minecraft;
 
 import io.netty.buffer.Unpooled;
 
-import espcraft.world.inventory.Guidebook1Menu;
+import espcraft.world.inventory.Guidebook2Menu;
 
 import espcraft.init.EspcraftModItems;
 
-public class GuidebookOpenProcedure {
+public class GuidebookPage4Procedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
+		if (entity instanceof Player _player)
+			_player.closeContainer();
 		if (world.isClientSide())
 			Minecraft.getInstance().gameRenderer.displayItemActivation(new ItemStack(EspcraftModItems.GUIDEBOOK.get()));
 		new Object() {
@@ -58,12 +60,12 @@ public class GuidebookOpenProcedure {
 						NetworkHooks.openGui((ServerPlayer) _ent, new MenuProvider() {
 							@Override
 							public Component getDisplayName() {
-								return new TextComponent("Guidebook1");
+								return new TextComponent("Guidebook2");
 							}
 
 							@Override
 							public AbstractContainerMenu createMenu(int id, Inventory inventory, Player player) {
-								return new Guidebook1Menu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(_bpos));
+								return new Guidebook2Menu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(_bpos));
 							}
 						}, _bpos);
 					}

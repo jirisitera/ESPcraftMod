@@ -25,10 +25,12 @@ import espcraft.world.inventory.Guidebook1Menu;
 
 import espcraft.init.EspcraftModItems;
 
-public class GuidebookOpenProcedure {
+public class GuidebookPage1Procedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
+		if (entity instanceof Player _player)
+			_player.closeContainer();
 		if (world.isClientSide())
 			Minecraft.getInstance().gameRenderer.displayItemActivation(new ItemStack(EspcraftModItems.GUIDEBOOK.get()));
 		new Object() {

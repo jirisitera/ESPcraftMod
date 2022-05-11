@@ -1,0 +1,179 @@
+{
+  "_fv": 28,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 146,
+    "height": 180,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "button",
+        "data": {
+          "text": "Turn to page 2",
+          "onClick": {
+            "name": "GuidebookPage2"
+          },
+          "width": 97,
+          "height": 20,
+          "name": "Turn to page 2",
+          "x": 165,
+          "y": 212
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Welcome to ESPcraft",
+          "color": {
+            "value": -16724788,
+            "falpha": 0.0
+          },
+          "name": "Welcome to ESPcraft",
+          "x": 165,
+          "y": 44
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Hi player!",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Hi player!",
+          "x": 157,
+          "y": 60
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "This guide will teach",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "This guide will teach",
+          "x": 157,
+          "y": 72
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "you about your very",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "you about your very",
+          "x": 157,
+          "y": 84
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Now then, lets begin.",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Now then, lets begin.",
+          "x": 157,
+          "y": 160
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "own ESPblock!",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "own ESPblock!",
+          "x": 157,
+          "y": 96
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Turn over to page 2",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Turn over to page 2",
+          "x": 157,
+          "y": 172
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "to continue.",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "to continue.",
+          "x": 157,
+          "y": 184
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "But first, make sure ",
+          "color": {
+            "value": -3407872,
+            "falpha": 0.0
+          },
+          "name": "But first, make sure ",
+          "x": 157,
+          "y": 116
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "that you have your",
+          "color": {
+            "value": -3407872,
+            "falpha": 0.0
+          },
+          "name": "that you have your",
+          "x": 157,
+          "y": 128
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "ESP board all set up.",
+          "color": {
+            "value": -3407872,
+            "falpha": 0.0
+          },
+          "name": "ESP board all set up.",
+          "x": 157,
+          "y": 140
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 8,
+      "sy": 8,
+      "ox": 24,
+      "oy": 23,
+      "snapOnGrid": true
+    }
+  }
+}
