@@ -1,8 +1,8 @@
 {
   "parent": "espcraft:custom/espblock_red_receiver_off",
   "textures": {
-    "all": "espcraft:blocks/espblock",
-    "particle": "espcraft:blocks/espblock",
+    "all": "espcraft:blocks/espblock_receiver",
+    "particle": "espcraft:blocks/espblock_receiver",
     "0": "espcraft:blocks/smooth_stone",
     "2": "espcraft:blocks/redstone_torch_red_off",
     "3": "espcraft:blocks/anvil",

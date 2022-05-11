@@ -11,6 +11,7 @@ import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.client.gui.screens.MenuScreens;
 
+import espcraft.client.gui.Guidebook0Screen;
 import espcraft.client.gui.EspguinormalScreen;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
@@ -19,6 +20,7 @@ public class EspcraftModScreens {
 	public static void clientLoad(FMLClientSetupEvent event) {
 		event.enqueueWork(() -> {
 			MenuScreens.register(EspcraftModMenus.ESPGUINORMAL, EspguinormalScreen::new);
+			MenuScreens.register(EspcraftModMenus.GUIDEBOOK_0, Guidebook0Screen::new);
 		});
 	}
 }

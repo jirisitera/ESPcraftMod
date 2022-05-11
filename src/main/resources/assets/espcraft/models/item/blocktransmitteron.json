@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "espcraft:items/espblock"
+    "layer0": "espcraft:items/espblock_transmitter"
   }
 }

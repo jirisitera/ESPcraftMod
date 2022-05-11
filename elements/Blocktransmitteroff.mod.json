@@ -2,7 +2,7 @@
   "_fv": 28,
   "_type": "block",
   "definition": {
-    "texture": "espblock",
+    "texture": "espblock_transmitter",
     "textureTop": "",
     "textureLeft": "",
     "textureFront": "",
@@ -13,7 +13,7 @@
     "rotationMode": 0,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
-    "itemTexture": "espblock",
+    "itemTexture": "espblock_transmitter",
     "particleTexture": "",
     "tintType": "No tint",
     "isItemTinted": false,

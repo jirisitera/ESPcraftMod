@@ -573,6 +573,57 @@
       "locked_code": false,
       "registry_name": "channel",
       "path": "~/Other"
+    },
+    {
+      "name": "Guidebook0",
+      "type": "gui",
+      "sortid": 105,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "guidebook_0",
+      "path": "~/Other"
+    },
+    {
+      "name": "Guidebook",
+      "type": "item",
+      "sortid": 106,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "guidebook",
+      "path": "~/Other"
+    },
+    {
+      "name": "GuidebookOpen",
+      "type": "procedure",
+      "sortid": 107,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "guidebook_open",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures"
     }
   ],
   "variable_elements": [
@@ -580,7 +631,7 @@
       "name": "version",
       "type": "string",
       "scope": "map",
-      "value": "v.2.1.0"
+      "value": "v.2.1.1"
     },
     {
       "name": "Value",
@@ -602,6 +653,7 @@
       "advancements.espcraft_5.descr": "Receive your first signal from the real world.",
       "key.espcraftmod.developer_tools": "Developer Tools",
       "advancements.espcraft_1.descr": "Turn your ESPblock into a Transmitter.",
+      "item.espcraft.guidebook": "ESPcraft Guidebook",
       "advancements.espcraft_7.descr": "Give your ESPblock a proper name.",
       "block.espcraftmod.blocktransmitteron": "Blocktransmitteron",
       "advancements.espcraft_9.title": "Power Distributor",
@@ -648,7 +700,7 @@
   "workspaceSettings": {
     "modid": "espcraft",
     "modName": "ESPcraft",
-    "version": "2.1.0",
+    "version": "2.1.1",
     "description": "A tool for connecting worlds.",
     "author": "Nvias",
     "websiteURL": "https://www.nvias.org",

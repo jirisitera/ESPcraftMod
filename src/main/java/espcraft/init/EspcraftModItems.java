@@ -13,6 +13,8 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.BlockItem;
 
+import espcraft.item.GuidebookItem;
+
 import espcraft.EspcraftMod;
 
 public class EspcraftModItems {
@@ -23,6 +25,7 @@ public class EspcraftModItems {
 	public static final RegistryObject<Item> BLOCKRECEIVERON = block(EspcraftModBlocks.BLOCKRECEIVERON, null);
 	public static final RegistryObject<Item> BLOCKRECEIVEROFF = block(EspcraftModBlocks.BLOCKRECEIVEROFF, null);
 	public static final RegistryObject<Item> ESPBLOCKON = block(EspcraftModBlocks.ESPBLOCKON, null);
+	public static final RegistryObject<Item> GUIDEBOOK = REGISTRY.register("guidebook", () -> new GuidebookItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

@@ -1,7 +1,7 @@
 {
   "parent": "espcraft:custom/espblock_red_transmitter",
   "textures": {
-    "all": "espcraft:blocks/espblock",
+    "all": "espcraft:blocks/espblock_transmitter",
     "particle": "espcraft:blocks/repeater_top_off",
     "0": "espcraft:blocks/smooth_stone",
     "2": "espcraft:blocks/redstone_torch_off",

@@ -1,0 +1,46 @@
+{
+  "_fv": 28,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 146,
+    "height": 180,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "button",
+        "data": {
+          "text": "Turn to page 2",
+          "width": 97,
+          "height": 20,
+          "name": "Turn to page 2",
+          "x": 165,
+          "y": 212
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Welcome to ESPcraft",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Welcome to ESPcraft",
+          "x": 165,
+          "y": 44
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 16,
+      "sy": 16,
+      "ox": 24,
+      "oy": 23,
+      "snapOnGrid": true
+    }
+  }
+}
