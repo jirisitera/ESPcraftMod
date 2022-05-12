@@ -4,7 +4,7 @@
   "definition": {
     "type": 0,
     "width": 146,
-    "height": 180,
+    "height": 220,
     "inventoryOffsetX": 0,
     "inventoryOffsetY": 0,
     "renderBgLayer": true,
@@ -33,8 +33,8 @@
             "falpha": 0.0
           },
           "name": "Welcome to ESPcraft",
-          "x": 165,
-          "y": 44
+          "x": 161,
+          "y": 20
         }
       },
       {
@@ -47,7 +47,7 @@
           },
           "name": "Hi player!",
           "x": 157,
-          "y": 60
+          "y": 36
         }
       },
       {
@@ -60,7 +60,7 @@
           },
           "name": "This guide will teach",
           "x": 157,
-          "y": 72
+          "y": 48
         }
       },
       {
@@ -73,7 +73,7 @@
           },
           "name": "you about your very",
           "x": 157,
-          "y": 84
+          "y": 60
         }
       },
       {
@@ -86,7 +86,7 @@
           },
           "name": "Now then, lets begin.",
           "x": 157,
-          "y": 160
+          "y": 136
         }
       },
       {
@@ -99,7 +99,7 @@
           },
           "name": "own ESPblock!",
           "x": 157,
-          "y": 96
+          "y": 72
         }
       },
       {
@@ -112,7 +112,7 @@
           },
           "name": "Turn over to page 2",
           "x": 157,
-          "y": 172
+          "y": 148
         }
       },
       {
@@ -125,7 +125,7 @@
           },
           "name": "to continue.",
           "x": 157,
-          "y": 184
+          "y": 160
         }
       },
       {
@@ -138,7 +138,7 @@
           },
           "name": "But first, make sure ",
           "x": 157,
-          "y": 116
+          "y": 92
         }
       },
       {
@@ -151,7 +151,7 @@
           },
           "name": "that you have your",
           "x": 157,
-          "y": 128
+          "y": 104
         }
       },
       {
@@ -164,7 +164,7 @@
           },
           "name": "ESP board all set up.",
           "x": 157,
-          "y": 140
+          "y": 116
         }
       }
     ],
