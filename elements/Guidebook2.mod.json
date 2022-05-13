@@ -4,7 +4,7 @@
   "definition": {
     "type": 0,
     "width": 146,
-    "height": 180,
+    "height": 220,
     "inventoryOffsetX": 0,
     "inventoryOffsetY": 0,
     "renderBgLayer": true,
@@ -20,7 +20,7 @@
           },
           "name": "Meet your ESPblock",
           "x": 157,
-          "y": 44
+          "y": 24
         }
       },
       {
@@ -33,7 +33,7 @@
           },
           "name": "The ESPblock is the",
           "x": 157,
-          "y": 60
+          "y": 40
         }
       },
       {
@@ -46,7 +46,7 @@
           },
           "name": "ultimate connection",
           "x": 157,
-          "y": 72
+          "y": 52
         }
       },
       {
@@ -59,7 +59,7 @@
           },
           "name": "plug between Minecraft",
           "x": 157,
-          "y": 84
+          "y": 64
         }
       },
       {
@@ -72,7 +72,7 @@
           },
           "name": "and your ESP board.",
           "x": 157,
-          "y": 96
+          "y": 76
         }
       },
       {
@@ -86,7 +86,7 @@
           "height": 20,
           "name": "Next",
           "x": 217,
-          "y": 212
+          "y": 192
         }
       },
       {
@@ -100,7 +100,7 @@
           "height": 20,
           "name": "Previous",
           "x": 153,
-          "y": 212
+          "y": 192
         }
       },
       {
@@ -113,7 +113,7 @@
           },
           "name": "How do you set it up?",
           "x": 157,
-          "y": 116
+          "y": 96
         }
       },
       {
@@ -123,46 +123,46 @@
           "use1Xscale": false,
           "name": "espblock.png",
           "x": 257,
-          "y": 40
+          "y": 20
         }
       },
       {
         "type": "label",
         "data": {
-          "text": "First, you will need to",
+          "text": "First, you need to be",
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "name": "First, you will need to",
+          "name": "First, you need to be",
           "x": 157,
-          "y": 136
+          "y": 116
         }
       },
       {
         "type": "label",
         "data": {
-          "text": "stand on your ESPblock",
+          "text": "on your ESPblock and",
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "name": "stand on your ESPblock",
+          "name": "on your ESPblock and",
           "x": 157,
-          "y": 148
+          "y": 128
         }
       },
       {
         "type": "label",
         "data": {
-          "text": "and use these commands:",
+          "text": "use these commands:",
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "name": "and use these commands:",
+          "name": "use these commands:",
           "x": 157,
-          "y": 160
+          "y": 140
         }
       },
       {
@@ -175,7 +175,7 @@
           },
           "name": "/uuid [your ESP uuid]",
           "x": 157,
-          "y": 172
+          "y": 152
         }
       },
       {
@@ -188,7 +188,7 @@
           },
           "name": "/channel [sensor id]",
           "x": 157,
-          "y": 184
+          "y": 164
         }
       }
     ],

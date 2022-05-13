@@ -74,17 +74,17 @@ public class Guidebook1Screen extends AbstractContainerScreen<Guidebook1Menu> {
 
 	@Override
 	protected void renderLabels(PoseStack poseStack, int mouseX, int mouseY) {
-		this.font.draw(poseStack, "Welcome to ESPcraft", 20, 10, -16724788);
-		this.font.draw(poseStack, "Hi player!", 16, 26, -12829636);
-		this.font.draw(poseStack, "This guide will teach", 16, 38, -12829636);
-		this.font.draw(poseStack, "you about your very", 16, 50, -12829636);
-		this.font.draw(poseStack, "Now then, lets begin.", 16, 126, -12829636);
-		this.font.draw(poseStack, "own ESPblock!", 16, 62, -12829636);
-		this.font.draw(poseStack, "Turn over to page 2", 16, 138, -12829636);
-		this.font.draw(poseStack, "to continue.", 16, 150, -12829636);
-		this.font.draw(poseStack, "But first, make sure ", 16, 82, -3407872);
-		this.font.draw(poseStack, "that you have your", 16, 94, -3407872);
-		this.font.draw(poseStack, "ESP board all set up.", 16, 106, -3407872);
+		this.font.draw(poseStack, "Welcome to ESPcraft", 20, 14, -16724788);
+		this.font.draw(poseStack, "Hi player!", 16, 30, -12829636);
+		this.font.draw(poseStack, "This guide will teach", 16, 42, -12829636);
+		this.font.draw(poseStack, "you about your very", 16, 54, -12829636);
+		this.font.draw(poseStack, "Now then, lets begin.", 16, 130, -12829636);
+		this.font.draw(poseStack, "own ESPblock!", 16, 66, -12829636);
+		this.font.draw(poseStack, "Turn over to page 2", 16, 142, -12829636);
+		this.font.draw(poseStack, "to continue.", 16, 154, -12829636);
+		this.font.draw(poseStack, "But first, make sure ", 16, 86, -3407872);
+		this.font.draw(poseStack, "that you have your", 16, 98, -3407872);
+		this.font.draw(poseStack, "ESP board all set up.", 16, 110, -3407872);
 	}
 
 	@Override
@@ -97,7 +97,7 @@ public class Guidebook1Screen extends AbstractContainerScreen<Guidebook1Menu> {
 	public void init() {
 		super.init();
 		this.minecraft.keyboardHandler.setSendRepeatsToGui(true);
-		this.addRenderableWidget(new Button(this.leftPos + 24, this.topPos + 202, 97, 20, new TextComponent("Turn to page 2"), e -> {
+		this.addRenderableWidget(new Button(this.leftPos + 24, this.topPos + 182, 97, 20, new TextComponent("Turn to page 2"), e -> {
 			if (true) {
 				EspcraftMod.PACKET_HANDLER.sendToServer(new Guidebook1ButtonMessage(0, x, y, z));
 				Guidebook1ButtonMessage.handleButtonAction(entity, 0, x, y, z);

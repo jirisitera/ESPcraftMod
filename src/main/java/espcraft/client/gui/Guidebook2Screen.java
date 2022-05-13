@@ -36,7 +36,7 @@ public class Guidebook2Screen extends AbstractContainerScreen<Guidebook2Menu> {
 		this.z = container.z;
 		this.entity = container.entity;
 		this.imageWidth = 146;
-		this.imageHeight = 180;
+		this.imageHeight = 220;
 	}
 
 	private static final ResourceLocation texture = new ResourceLocation("espcraft:textures/guidebook_2.png");
@@ -84,9 +84,9 @@ public class Guidebook2Screen extends AbstractContainerScreen<Guidebook2Menu> {
 		this.font.draw(poseStack, "plug between Minecraft", 16, 54, -12829636);
 		this.font.draw(poseStack, "and your ESP board.", 16, 66, -12829636);
 		this.font.draw(poseStack, "How do you set it up?", 16, 86, -12829636);
-		this.font.draw(poseStack, "First, you will need to", 16, 106, -12829636);
-		this.font.draw(poseStack, "stand on your ESPblock", 16, 118, -12829636);
-		this.font.draw(poseStack, "and use these commands:", 16, 130, -12829636);
+		this.font.draw(poseStack, "First, you need to be", 16, 106, -12829636);
+		this.font.draw(poseStack, "on your ESPblock and", 16, 118, -12829636);
+		this.font.draw(poseStack, "use these commands:", 16, 130, -12829636);
 		this.font.draw(poseStack, "/uuid [your ESP uuid]", 16, 142, -3407872);
 		this.font.draw(poseStack, "/channel [sensor id]", 16, 154, -3407872);
 	}
