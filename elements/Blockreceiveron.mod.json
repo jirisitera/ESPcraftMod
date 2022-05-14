@@ -64,7 +64,7 @@
     },
     "colorOnMap": "DEFAULT",
     "creativePickItem": {
-      "value": ""
+      "value": "CUSTOM:Espblockoff"
     },
     "offsetType": "NONE",
     "aiPathNodeType": "DEFAULT",
@@ -123,7 +123,7 @@
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
     "onTickUpdate": {
-      "name": "UpdateBlock"
+      "name": "Redstone"
     },
     "onDestroyedByExplosion": {
       "name": "EspblockOvercharged"

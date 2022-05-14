@@ -60,7 +60,7 @@ public class EspguinormalScreen extends AbstractContainerScreen<EspguinormalMenu
 		this.blit(ms, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
 
 		RenderSystem.setShaderTexture(0, new ResourceLocation("espcraft:textures/nvias_logo_new_small.png"));
-		this.blit(ms, this.leftPos + 10, this.topPos + 8, 0, 0, 50, 50, 50, 50);
+		this.blit(ms, this.leftPos + 15, this.topPos + 8, 0, 0, 50, 50, 50, 50);
 
 		RenderSystem.disableBlend();
 	}
@@ -89,9 +89,9 @@ public class EspguinormalScreen extends AbstractContainerScreen<EspguinormalMenu
 					return BlockEntity.getTileData().getString(tag);
 				return "";
 			}
-		}.getValue(new BlockPos((int) x, (int) y, (int) z), "Mode")) + "", 5, 133, -12829636);
-		this.font.draw(poseStack, "ESPblock location: " + x + " " + y + " " + z + "", 65, 33, -12829636);
-		this.font.draw(poseStack, "ESPblock Settings", 95, 13, -12829636);
+		}.getValue(new BlockPos((int) x, (int) y, (int) z), "Mode")) + "", 10, 133, -12829636);
+		this.font.draw(poseStack, "ESPblock location: " + x + " " + y + " " + z + "", 75, 33, -12829636);
+		this.font.draw(poseStack, "ESPblock Settings", 95, 13, -16711732);
 		this.font.draw(poseStack, "UUID: " + (new Object() {
 			public String getValue(BlockPos pos, String tag) {
 				BlockEntity BlockEntity = world.getBlockEntity(pos);
@@ -99,7 +99,7 @@ public class EspguinormalScreen extends AbstractContainerScreen<EspguinormalMenu
 					return BlockEntity.getTileData().getString(tag);
 				return "";
 			}
-		}.getValue(new BlockPos((int) x, (int) y, (int) z), "Name")) + "", 5, 103, -12829636);
+		}.getValue(new BlockPos((int) x, (int) y, (int) z), "Name")) + "", 10, 103, -12829636);
 		this.font.draw(poseStack, "Channel: " + (new Object() {
 			public String getValue(BlockPos pos, String tag) {
 				BlockEntity BlockEntity = world.getBlockEntity(pos);
@@ -107,7 +107,7 @@ public class EspguinormalScreen extends AbstractContainerScreen<EspguinormalMenu
 					return BlockEntity.getTileData().getString(tag);
 				return "";
 			}
-		}.getValue(new BlockPos((int) x, (int) y, (int) z), "Channel")) + "", 5, 118, -12829636);
+		}.getValue(new BlockPos((int) x, (int) y, (int) z), "Channel")) + "", 10, 118, -12829636);
 	}
 
 	@Override

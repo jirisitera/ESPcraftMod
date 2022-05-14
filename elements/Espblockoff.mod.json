@@ -63,7 +63,7 @@
     },
     "colorOnMap": "DEFAULT",
     "creativePickItem": {
-      "value": ""
+      "value": "CUSTOM:Espblockoff"
     },
     "offsetType": "NONE",
     "aiPathNodeType": "DEFAULT",

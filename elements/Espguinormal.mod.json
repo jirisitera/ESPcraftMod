@@ -32,7 +32,7 @@
             "falpha": 0.0
           },
           "name": "Mode: <BNBT:text:Mode>",
-          "x": 81,
+          "x": 86,
           "y": 178
         }
       },
@@ -73,7 +73,7 @@
             "falpha": 0.0
           },
           "name": "ESPblock location: <x> <y> <z>",
-          "x": 141,
+          "x": 151,
           "y": 78
         }
       },
@@ -82,7 +82,7 @@
         "data": {
           "text": "ESPblock Settings",
           "color": {
-            "value": -12829636,
+            "value": -16711732,
             "falpha": 0.0
           },
           "name": "ESPblock Settings",
@@ -96,7 +96,7 @@
           "image": "nvias_logo_new_small.png",
           "use1Xscale": true,
           "name": "nvias_logo_new_small.png",
-          "x": 86,
+          "x": 91,
           "y": 53
         }
       },
@@ -109,7 +109,7 @@
             "falpha": 0.0
           },
           "name": "UUID: <BNBT:text:Name>",
-          "x": 81,
+          "x": 86,
           "y": 148
         }
       },
@@ -122,7 +122,7 @@
             "falpha": 0.0
           },
           "name": "Channel: <BNBT:text:Channel>",
-          "x": 81,
+          "x": 86,
           "y": 163
         }
       }

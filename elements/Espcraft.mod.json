@@ -5,11 +5,11 @@
     "achievementName": "ESPcraft",
     "achievementDescription": "A tool for connecting worlds.",
     "achievementIcon": {
-      "value": "Blocks.COMMAND_BLOCK"
+      "value": "CUSTOM:Guidebook"
     },
     "background": "ancient_debris_side.png",
     "disableDisplay": false,
-    "showPopup": false,
+    "showPopup": true,
     "announceToChat": false,
     "hideIfNotCompleted": false,
     "rewardLoot": [],

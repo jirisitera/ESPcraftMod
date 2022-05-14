@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "item": "minecraft:redstone_torch"
+      "item": "minecraft:redstone_block"
     },
     "title": {
       "translate": "advancements.espcraft_9.title"
@@ -9,7 +9,7 @@
     "description": {
       "translate": "advancements.espcraft_9.descr"
     },
-    "frame": "goal",
+    "frame": "task",
     "show_toast": true,
     "announce_to_chat": true,
     "hidden": false

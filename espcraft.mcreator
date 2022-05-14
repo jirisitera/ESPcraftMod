@@ -815,6 +815,35 @@
         ]
       },
       "path": "~/Procedures"
+    },
+    {
+      "name": "Redstone",
+      "type": "procedure",
+      "sortid": 118,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "redstone",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures"
     }
   ],
   "variable_elements": [

@@ -5,7 +5,7 @@
     "achievementName": "Power Distributor",
     "achievementDescription": "Turn on your ESPblock for the first time.",
     "achievementIcon": {
-      "value": "Blocks.REDSTONE_TORCH"
+      "value": "Blocks.REDSTONE_BLOCK"
     },
     "background": "ancient_debris_side.png",
     "disableDisplay": false,
@@ -16,7 +16,7 @@
     "rewardRecipes": [],
     "rewardFunction": "No function",
     "rewardXP": 0,
-    "achievementType": "goal",
+    "achievementType": "task",
     "parent": {
       "value": "CUSTOM:Espcraft"
     },

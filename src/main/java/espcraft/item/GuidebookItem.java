@@ -14,7 +14,7 @@ import espcraft.procedures.GuidebookOpenProcedure;
 
 public class GuidebookItem extends Item {
 	public GuidebookItem() {
-		super(new Item.Properties().tab(CreativeModeTab.TAB_TOOLS).stacksTo(1).rarity(Rarity.RARE));
+		super(new Item.Properties().tab(CreativeModeTab.TAB_MISC).stacksTo(1).rarity(Rarity.RARE));
 	}
 
 	@Override

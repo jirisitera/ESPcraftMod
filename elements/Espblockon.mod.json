@@ -57,13 +57,13 @@
     "tickRate": 10,
     "tickRandomly": false,
     "isReplaceable": false,
-    "canProvidePower": false,
+    "canProvidePower": true,
     "emittedRedstonePower": {
-      "fixedValue": 0.0
+      "fixedValue": 15.0
     },
     "colorOnMap": "DEFAULT",
     "creativePickItem": {
-      "value": ""
+      "value": "CUSTOM:Espblockoff"
     },
     "offsetType": "NONE",
     "aiPathNodeType": "DEFAULT",
@@ -94,15 +94,15 @@
     "stepSound": {
       "value": ""
     },
-    "luminance": 0,
+    "luminance": 15,
     "unbreakable": false,
     "breakHarvestLevel": 1,
     "spawnParticles": false,
     "particleToSpawn": {
       "value": "EXPLOSION_NORMAL"
     },
-    "particleSpawningShape": "Spread",
-    "particleSpawningRadious": 0.5,
+    "particleSpawningShape": "Plane",
+    "particleSpawningRadious": 0.05,
     "particleAmount": 4,
     "hasInventory": true,
     "guiBoundTo": "Espguinormal",
@@ -121,6 +121,9 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
+    "onTickUpdate": {
+      "name": "Redstone"
+    },
     "onDestroyedByExplosion": {
       "name": "EspblockOvercharged"
     },

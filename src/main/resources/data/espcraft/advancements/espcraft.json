@@ -2,7 +2,7 @@
   "display": {
     "background": "espcraft:textures/ancient_debris_side.png",
     "icon": {
-      "item": "minecraft:command_block"
+      "item": "espcraft:guidebook"
     },
     "title": {
       "translate": "advancements.espcraft.title"
@@ -11,7 +11,7 @@
       "translate": "advancements.espcraft.descr"
     },
     "frame": "task",
-    "show_toast": false,
+    "show_toast": true,
     "announce_to_chat": false,
     "hidden": false
   },

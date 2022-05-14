@@ -1,6 +1,8 @@
 
 package espcraft.block;
 
+import org.checkerframework.checker.units.qual.s;
+
 import net.minecraftforge.network.NetworkHooks;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
@@ -8,6 +10,7 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.minecraft.world.phys.shapes.VoxelShape;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.Vec3;
+import net.minecraft.world.phys.HitResult;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.level.storage.loot.LootContext;
 import net.minecraft.world.level.material.Material;
@@ -29,6 +32,7 @@ import net.minecraft.world.InteractionResult;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.Containers;
 import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.network.chat.TextComponent;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.FriendlyByteBuf;
@@ -37,6 +41,7 @@ import net.minecraft.core.BlockPos;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 
+import java.util.Random;
 import java.util.List;
 import java.util.Collections;
 
@@ -45,6 +50,7 @@ import io.netty.buffer.Unpooled;
 import espcraft.world.inventory.EspguinormalMenu;
 
 import espcraft.procedures.TurnoffProcedure;
+import espcraft.procedures.RedstoneProcedure;
 import espcraft.procedures.EspblockOverchargedProcedure;
 
 import espcraft.init.EspcraftModBlocks;
@@ -56,7 +62,7 @@ public class EspblockonBlock extends Block
 
 			EntityBlock {
 	public EspblockonBlock() {
-		super(BlockBehaviour.Properties.of(Material.WATER_PLANT).sound(SoundType.STONE).strength(1f, 10f).noOcclusion()
+		super(BlockBehaviour.Properties.of(Material.WATER_PLANT).sound(SoundType.STONE).strength(1f, 10f).lightLevel(s -> 15).noOcclusion()
 				.isRedstoneConductor((bs, br, bp) -> false));
 	}
 
@@ -77,6 +83,21 @@ public class EspblockonBlock extends Block
 	}
 
 	@Override
+	public boolean isSignalSource(BlockState state) {
+		return true;
+	}
+
+	@Override
+	public int getSignal(BlockState blockstate, BlockGetter blockAccess, BlockPos pos, Direction direction) {
+		return 15;
+	}
+
+	@Override
+	public ItemStack getCloneItemStack(BlockState state, HitResult target, BlockGetter world, BlockPos pos, Player player) {
+		return new ItemStack(EspcraftModBlocks.ESPBLOCKOFF.get());
+	}
+
+	@Override
 	public boolean canConnectRedstone(BlockState state, BlockGetter world, BlockPos pos, Direction side) {
 		return true;
 	}
@@ -90,12 +111,29 @@ public class EspblockonBlock extends Block
 	}
 
 	@Override
+	public void onPlace(BlockState blockstate, Level world, BlockPos pos, BlockState oldState, boolean moving) {
+		super.onPlace(blockstate, world, pos, oldState, moving);
+		world.scheduleTick(pos, this, 10);
+	}
+
+	@Override
 	public void neighborChanged(BlockState blockstate, Level world, BlockPos pos, Block neighborBlock, BlockPos fromPos, boolean moving) {
 		super.neighborChanged(blockstate, world, pos, neighborBlock, fromPos, moving);
 		if (world.getBestNeighborSignal(pos) > 0) {
 		} else {
 			TurnoffProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
 		}
+	}
+
+	@Override
+	public void tick(BlockState blockstate, ServerLevel world, BlockPos pos, Random random) {
+		super.tick(blockstate, world, pos, random);
+		int x = pos.getX();
+		int y = pos.getY();
+		int z = pos.getZ();
+
+		RedstoneProcedure.execute(world, x, y, z);
+		world.scheduleTick(pos, this, 10);
 	}
 
 	@Override
