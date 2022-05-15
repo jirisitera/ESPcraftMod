@@ -4,11 +4,10 @@ license="All Rights Reserved"
 
 [[mods]]
 modId="espcraft"
-version="2.1.1"
+version="2.1.2"
 displayName="ESPcraft"
 credits="Special thanks to you, the user."
 displayURL="https://www.nvias.org"
-logoFile="logo.png"
 authors="Nvias"
 description='''
 A tool for connecting worlds.

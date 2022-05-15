@@ -93,7 +93,7 @@ public class EspcraftModVariables {
 
 	public static class MapVariables extends SavedData {
 		public static final String DATA_NAME = "espcraft_mapvars";
-		public String version = "v.2.1.1";
+		public String version = "v.2.1.2";
 		public String Value = "";
 
 		public static MapVariables load(CompoundTag tag) {
