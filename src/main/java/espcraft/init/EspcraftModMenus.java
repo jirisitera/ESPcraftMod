@@ -15,6 +15,9 @@ import net.minecraft.world.inventory.AbstractContainerMenu;
 import java.util.List;
 import java.util.ArrayList;
 
+import espcraft.world.inventory.Guidebook5Menu;
+import espcraft.world.inventory.Guidebook4Menu;
+import espcraft.world.inventory.Guidebook3Menu;
 import espcraft.world.inventory.Guidebook2Menu;
 import espcraft.world.inventory.Guidebook1Menu;
 import espcraft.world.inventory.EspguinormalMenu;
@@ -28,6 +31,12 @@ public class EspcraftModMenus {
 			(id, inv, extraData) -> new Guidebook1Menu(id, inv, extraData));
 	public static final MenuType<Guidebook2Menu> GUIDEBOOK_2 = register("guidebook_2",
 			(id, inv, extraData) -> new Guidebook2Menu(id, inv, extraData));
+	public static final MenuType<Guidebook3Menu> GUIDEBOOK_3 = register("guidebook_3",
+			(id, inv, extraData) -> new Guidebook3Menu(id, inv, extraData));
+	public static final MenuType<Guidebook4Menu> GUIDEBOOK_4 = register("guidebook_4",
+			(id, inv, extraData) -> new Guidebook4Menu(id, inv, extraData));
+	public static final MenuType<Guidebook5Menu> GUIDEBOOK_5 = register("guidebook_5",
+			(id, inv, extraData) -> new Guidebook5Menu(id, inv, extraData));
 
 	private static <T extends AbstractContainerMenu> MenuType<T> register(String registryname, IContainerFactory<T> containerFactory) {
 		MenuType<T> menuType = new MenuType<T>(containerFactory);

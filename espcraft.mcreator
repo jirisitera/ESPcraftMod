@@ -844,6 +844,33 @@
         ]
       },
       "path": "~/Procedures"
+    },
+    {
+      "name": "Guidebook3",
+      "type": "gui",
+      "sortid": 119,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "guidebook_3",
+      "path": "~/Other"
+    },
+    {
+      "name": "Guidebook4",
+      "type": "gui",
+      "sortid": 120,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "guidebook_4",
+      "path": "~/Other"
+    },
+    {
+      "name": "Guidebook5",
+      "type": "gui",
+      "sortid": 121,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "guidebook_5",
+      "path": "~/Other"
     }
   ],
   "variable_elements": [
@@ -863,8 +890,8 @@
   "sound_elements": [],
   "language_map": {
     "en_us": {
-      "block.espcraft.espblockon": "ESPblock",
       "advancements.espcraft_8.title": "Channels do be changin\u0027!",
+      "block.espcraft.espblockon": "ESPblock",
       "advancements.espcraft_1.title": "Signal Sender",
       "advancements.espcraft_6.title": "Hello hello, does anybody copy?",
       "block.espcraftmod.blocktransmitteroff": "Blocktransmitteroff",

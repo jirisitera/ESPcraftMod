@@ -1,0 +1,242 @@
+{
+  "_fv": 28,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 146,
+    "height": 220,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "text": "Sending signals:",
+          "color": {
+            "value": -16724788,
+            "falpha": 0.0
+          },
+          "name": "Sending signals:",
+          "x": 157,
+          "y": 24
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "The Transmitter is a",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "The Transmitter is a",
+          "x": 157,
+          "y": 56
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "mode of the ESPblock,",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "mode of the ESPblock,",
+          "x": 157,
+          "y": 68
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "which allows you to",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "which allows you to",
+          "x": 157,
+          "y": 80
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Next",
+          "onClick": {
+            "name": "GuidebookPage4"
+          },
+          "width": 56,
+          "height": 20,
+          "name": "Next",
+          "x": 217,
+          "y": 192
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Previous",
+          "onClick": {
+            "name": "GuidebookPage2"
+          },
+          "width": 56,
+          "height": 20,
+          "name": "Previous",
+          "x": 153,
+          "y": 192
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "espblock_transmitter.png",
+          "use1Xscale": false,
+          "name": "espblock_transmitter.png",
+          "x": 257,
+          "y": 20
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "send signals to your",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "send signals to your",
+          "x": 157,
+          "y": 92
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "ESP board. You can",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "ESP board. You can",
+          "x": 157,
+          "y": 104
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "into a transmitter",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "into a transmitter",
+          "x": 157,
+          "y": 128
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Mode - Transmitter",
+          "color": {
+            "value": -16724788,
+            "falpha": 0.0
+          },
+          "name": "Mode - Transmitter",
+          "x": 157,
+          "y": 36
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "turn your ESPblock",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "turn your ESPblock",
+          "x": 157,
+          "y": 116
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "by clicking on it and",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "by clicking on it and",
+          "x": 157,
+          "y": 140
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "pressing the",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "pressing the",
+          "x": 157,
+          "y": 152
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Transmitter",
+          "color": {
+            "value": -6711040,
+            "falpha": 0.0
+          },
+          "name": "Transmitter",
+          "x": 157,
+          "y": 164
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Turn to",
+          "color": {
+            "value": -6711040,
+            "falpha": 0.0
+          },
+          "name": "Turn to",
+          "x": 225,
+          "y": 152
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "button.",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "button.",
+          "x": 217,
+          "y": 164
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 8,
+      "sy": 8,
+      "ox": 24,
+      "oy": 23,
+      "snapOnGrid": true
+    }
+  }
+}

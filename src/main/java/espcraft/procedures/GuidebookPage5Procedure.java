@@ -21,7 +21,7 @@ import net.minecraft.client.Minecraft;
 
 import io.netty.buffer.Unpooled;
 
-import espcraft.world.inventory.Guidebook2Menu;
+import espcraft.world.inventory.Guidebook5Menu;
 
 import espcraft.init.EspcraftModItems;
 
@@ -60,12 +60,12 @@ public class GuidebookPage5Procedure {
 						NetworkHooks.openGui((ServerPlayer) _ent, new MenuProvider() {
 							@Override
 							public Component getDisplayName() {
-								return new TextComponent("Guidebook2");
+								return new TextComponent("Guidebook5");
 							}
 
 							@Override
 							public AbstractContainerMenu createMenu(int id, Inventory inventory, Player player) {
-								return new Guidebook2Menu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(_bpos));
+								return new Guidebook5Menu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(_bpos));
 							}
 						}, _bpos);
 					}

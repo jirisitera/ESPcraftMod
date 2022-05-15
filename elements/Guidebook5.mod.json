@@ -1,0 +1,179 @@
+{
+  "_fv": 28,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 146,
+    "height": 220,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "text": "A bit of advanced info",
+          "color": {
+            "value": -16724788,
+            "falpha": 0.0
+          },
+          "name": "A bit of advanced info",
+          "x": 157,
+          "y": 24
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "We sincerely thank you",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "We sincerely thank you",
+          "x": 157,
+          "y": 52
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "for using our mod and",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "for using our mod and",
+          "x": 157,
+          "y": 64
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "we hope it has proven",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "we hope it has proven",
+          "x": 157,
+          "y": 76
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "to be useful for you.",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "to be useful for you.",
+          "x": 157,
+          "y": 88
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Turn to page 4",
+          "onClick": {
+            "name": "GuidebookPage4"
+          },
+          "width": 97,
+          "height": 20,
+          "name": "Turn to page 4",
+          "x": 165,
+          "y": 192
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "ESPcraft <VAR:version>",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "ESPcraft <VAR:version>",
+          "x": 157,
+          "y": 164
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Thank you for using",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Thank you for using",
+          "x": 157,
+          "y": 152
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Some Debug info:",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Some Debug info:",
+          "x": 157,
+          "y": 108
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "[<VAR:Value>]",
+          "color": {
+            "value": -65536,
+            "falpha": 0.0
+          },
+          "name": "[<VAR:Value>]",
+          "x": 157,
+          "y": 132
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Current value holder:",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Current value holder:",
+          "x": 157,
+          "y": 120
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "and a thanks to you!",
+          "color": {
+            "value": -16724788,
+            "falpha": 0.0
+          },
+          "name": "and a thanks to you!",
+          "x": 157,
+          "y": 36
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 8,
+      "sy": 8,
+      "ox": 24,
+      "oy": 23,
+      "snapOnGrid": true
+    }
+  }
+}
