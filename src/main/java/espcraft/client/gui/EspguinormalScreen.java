@@ -81,7 +81,7 @@ public class EspguinormalScreen extends AbstractContainerScreen<EspguinormalMenu
 
 	@Override
 	protected void renderLabels(PoseStack poseStack, int mouseX, int mouseY) {
-		this.font.draw(poseStack, "ESPcraft " + (EspcraftModVariables.MapVariables.get(world).version) + "", 185, 133, -12829636);
+		this.font.draw(poseStack, "ESPcraft " + (EspcraftModVariables.version) + "", 185, 133, -12829636);
 		this.font.draw(poseStack, "Mode: " + (new Object() {
 			public String getValue(BlockPos pos, String tag) {
 				BlockEntity BlockEntity = world.getBlockEntity(pos);

@@ -78,13 +78,13 @@ public class Guidebook5Screen extends AbstractContainerScreen<Guidebook5Menu> {
 		this.font.draw(poseStack, "A bit of advanced info", 16, 14, -16724788);
 		this.font.draw(poseStack, "We sincerely thank you", 16, 42, -12829636);
 		this.font.draw(poseStack, "for using our mod and", 16, 54, -12829636);
-		this.font.draw(poseStack, "ESPcraft " + (EspcraftModVariables.MapVariables.get(world).version) + "", 16, 154, -12829636);
+		this.font.draw(poseStack, "ESPcraft " + (EspcraftModVariables.version) + "", 16, 154, -12829636);
 		this.font.draw(poseStack, "Thank you for using", 16, 142, -12829636);
 		this.font.draw(poseStack, "Some Debug info:", 16, 86, -12829636);
-		this.font.draw(poseStack, "[" + (EspcraftModVariables.MapVariables.get(world).UUID) + "]", 16, 98, -65536);
+		this.font.draw(poseStack, "[" + (EspcraftModVariables.UUID) + "]", 16, 98, -65536);
 		this.font.draw(poseStack, "and a thanks to you!", 16, 26, -16724788);
-		this.font.draw(poseStack, "[" + (EspcraftModVariables.MapVariables.get(world).Channel) + "]", 16, 110, -65536);
-		this.font.draw(poseStack, "[" + (EspcraftModVariables.MapVariables.get(world).Power) + "]", 16, 122, -65536);
+		this.font.draw(poseStack, "[" + (EspcraftModVariables.Channel) + "]", 16, 110, -65536);
+		this.font.draw(poseStack, "[" + (EspcraftModVariables.Power) + "]", 16, 122, -65536);
 		this.font.draw(poseStack, "we hope you like it.", 16, 66, -12829636);
 	}
 

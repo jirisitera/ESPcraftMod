@@ -261,10 +261,6 @@
           {
             "name": "cmdparams",
             "type": "map"
-          },
-          {
-            "name": "world",
-            "type": "world"
           }
         ]
       },
@@ -906,33 +902,33 @@
     {
       "name": "version",
       "type": "string",
-      "scope": "map",
-      "value": "v.2.1.2"
+      "scope": "global",
+      "value": "v.2.3.0"
     },
     {
       "name": "UUID",
       "type": "string",
-      "scope": "map",
-      "value": "\"\""
+      "scope": "global",
+      "value": ""
     },
     {
       "name": "Channel",
       "type": "string",
-      "scope": "map",
-      "value": "\"\""
+      "scope": "global",
+      "value": ""
     },
     {
       "name": "Power",
       "type": "string",
-      "scope": "map",
-      "value": "\"\""
+      "scope": "global",
+      "value": ""
     }
   ],
   "sound_elements": [],
   "language_map": {
     "en_us": {
-      "block.espcraft.espblockon": "ESPblock",
       "advancements.espcraft_8.title": "Channels do be changin\u0027!",
+      "block.espcraft.espblockon": "ESPblock",
       "advancements.espcraft_1.title": "Signal Sender",
       "advancements.espcraft_6.title": "Hello hello, does anybody copy?",
       "block.espcraftmod.blocktransmitteroff": "Blocktransmitteroff",
@@ -988,13 +984,14 @@
   "workspaceSettings": {
     "modid": "espcraft",
     "modName": "ESPcraft",
-    "version": "2.1.2",
+    "version": "2.3.0",
     "description": "A tool for connecting worlds.",
     "author": "Nvias",
     "websiteURL": "https://www.nvias.org",
     "license": "All Rights Reserved",
     "disableForgeVersionCheck": true,
     "serverSideOnly": false,
+    "modPicture": "nvias_logo_new",
     "requiredMods": [],
     "dependencies": [],
     "dependants": [],

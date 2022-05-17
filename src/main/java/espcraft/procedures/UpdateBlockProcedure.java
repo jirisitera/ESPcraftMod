@@ -28,7 +28,7 @@ import espcraft.init.EspcraftModBlocks;
 
 public class UpdateBlockProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
-		if ((EspcraftModVariables.MapVariables.get(world).UUID).equals(new Object() {
+		if ((EspcraftModVariables.UUID).equals(new Object() {
 			public String getValue(LevelAccessor world, BlockPos pos, String tag) {
 				BlockEntity blockEntity = world.getBlockEntity(pos);
 				if (blockEntity != null)
@@ -36,7 +36,7 @@ public class UpdateBlockProcedure {
 				return "";
 			}
 		}.getValue(world, new BlockPos(x, y, z), "Name"))) {
-			if ((EspcraftModVariables.MapVariables.get(world).Channel).equals(new Object() {
+			if ((EspcraftModVariables.Channel).equals(new Object() {
 				public String getValue(LevelAccessor world, BlockPos pos, String tag) {
 					BlockEntity blockEntity = world.getBlockEntity(pos);
 					if (blockEntity != null)
@@ -52,7 +52,7 @@ public class UpdateBlockProcedure {
 						}
 						return 0;
 					}
-				}.convert(EspcraftModVariables.MapVariables.get(world).Power) != new Object() {
+				}.convert(EspcraftModVariables.Power) != new Object() {
 					public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 						BlockEntity blockEntity = world.getBlockEntity(pos);
 						if (blockEntity != null)
@@ -73,16 +73,13 @@ public class UpdateBlockProcedure {
 									}
 									return 0;
 								}
-							}.convert(EspcraftModVariables.MapVariables.get(world).Power));
+							}.convert(EspcraftModVariables.Power));
 						if (world instanceof Level _level)
 							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 					}
-					EspcraftModVariables.MapVariables.get(world).UUID = "";
-					EspcraftModVariables.MapVariables.get(world).syncData(world);
-					EspcraftModVariables.MapVariables.get(world).Channel = "";
-					EspcraftModVariables.MapVariables.get(world).syncData(world);
-					EspcraftModVariables.MapVariables.get(world).Power = "";
-					EspcraftModVariables.MapVariables.get(world).syncData(world);
+					EspcraftModVariables.UUID = "";
+					EspcraftModVariables.Channel = "";
+					EspcraftModVariables.Power = "";
 					if (world instanceof Level _level)
 						_level.updateNeighborsAt(new BlockPos(x, y, z), _level.getBlockState(new BlockPos(x, y, z)).getBlock());
 					if (((Entity) world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true).stream()

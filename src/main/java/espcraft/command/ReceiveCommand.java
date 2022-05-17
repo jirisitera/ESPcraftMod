@@ -47,7 +47,7 @@ public class ReceiveCommand {
 			index[0]++;
 		});
 
-		ReceiveMessageProcedure.execute(world, cmdparams);
+		ReceiveMessageProcedure.execute(cmdparams);
 		return 0;
 	}
 }
