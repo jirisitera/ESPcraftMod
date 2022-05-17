@@ -50,32 +50,6 @@
         }
       },
       {
-        "type": "label",
-        "data": {
-          "text": "we hope it has proven",
-          "color": {
-            "value": -12829636,
-            "falpha": 0.0
-          },
-          "name": "we hope it has proven",
-          "x": 157,
-          "y": 76
-        }
-      },
-      {
-        "type": "label",
-        "data": {
-          "text": "to be useful for you.",
-          "color": {
-            "value": -12829636,
-            "falpha": 0.0
-          },
-          "name": "to be useful for you.",
-          "x": 157,
-          "y": 88
-        }
-      },
-      {
         "type": "button",
         "data": {
           "text": "Turn to page 4",
@@ -125,33 +99,20 @@
           },
           "name": "Some Debug info:",
           "x": 157,
-          "y": 108
+          "y": 96
         }
       },
       {
         "type": "label",
         "data": {
-          "text": "[<VAR:Value>]",
+          "text": "[<VAR:UUID>]",
           "color": {
             "value": -65536,
             "falpha": 0.0
           },
-          "name": "[<VAR:Value>]",
+          "name": "[<VAR:UUID>]",
           "x": 157,
-          "y": 132
-        }
-      },
-      {
-        "type": "label",
-        "data": {
-          "text": "Current value holder:",
-          "color": {
-            "value": -12829636,
-            "falpha": 0.0
-          },
-          "name": "Current value holder:",
-          "x": 157,
-          "y": 120
+          "y": 108
         }
       },
       {
@@ -165,6 +126,45 @@
           "name": "and a thanks to you!",
           "x": 157,
           "y": 36
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "[<VAR:Channel>]",
+          "color": {
+            "value": -65536,
+            "falpha": 0.0
+          },
+          "name": "[<VAR:Channel>]",
+          "x": 157,
+          "y": 120
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "[<VAR:Power>]",
+          "color": {
+            "value": -65536,
+            "falpha": 0.0
+          },
+          "name": "[<VAR:Power>]",
+          "x": 157,
+          "y": 132
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "we hope you like it.",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "we hope you like it.",
+          "x": 157,
+          "y": 76
         }
       }
     ],

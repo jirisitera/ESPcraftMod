@@ -50,7 +50,7 @@ import io.netty.buffer.Unpooled;
 import espcraft.world.inventory.EspguinormalMenu;
 
 import espcraft.procedures.TurnoffProcedure;
-import espcraft.procedures.RedstoneProcedure;
+import espcraft.procedures.ReceiverOnHandlerProcedure;
 import espcraft.procedures.EspblockOverchargedProcedure;
 import espcraft.procedures.BlockreceiveronValueProcedure;
 
@@ -137,7 +137,7 @@ public class BlockreceiveronBlock extends Block
 		int y = pos.getY();
 		int z = pos.getZ();
 
-		RedstoneProcedure.execute(world, x, y, z);
+		ReceiverOnHandlerProcedure.execute(world, x, y, z);
 		world.scheduleTick(pos, this, 10);
 	}
 

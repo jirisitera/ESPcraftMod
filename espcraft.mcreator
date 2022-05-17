@@ -871,6 +871,35 @@
       "locked_code": false,
       "registry_name": "guidebook_5",
       "path": "~/Other"
+    },
+    {
+      "name": "ReceiverOnHandler",
+      "type": "procedure",
+      "sortid": 122,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "receiver_on_handler",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures"
     }
   ],
   "variable_elements": [
@@ -881,17 +910,29 @@
       "value": "v.2.1.2"
     },
     {
-      "name": "Value",
+      "name": "UUID",
       "type": "string",
       "scope": "map",
-      "value": ""
+      "value": "\"\""
+    },
+    {
+      "name": "Channel",
+      "type": "string",
+      "scope": "map",
+      "value": "\"\""
+    },
+    {
+      "name": "Power",
+      "type": "string",
+      "scope": "map",
+      "value": "\"\""
     }
   ],
   "sound_elements": [],
   "language_map": {
     "en_us": {
-      "advancements.espcraft_8.title": "Channels do be changin\u0027!",
       "block.espcraft.espblockon": "ESPblock",
+      "advancements.espcraft_8.title": "Channels do be changin\u0027!",
       "advancements.espcraft_1.title": "Signal Sender",
       "advancements.espcraft_6.title": "Hello hello, does anybody copy?",
       "block.espcraftmod.blocktransmitteroff": "Blocktransmitteroff",

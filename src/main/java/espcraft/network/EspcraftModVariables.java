@@ -1,7 +1,5 @@
 package espcraft.network;
 
-import org.objectweb.asm.tree.analysis.Value;
-
 import net.minecraftforge.network.PacketDistributor;
 import net.minecraftforge.network.NetworkEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
@@ -19,6 +17,7 @@ import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.nbt.CompoundTag;
 
 import java.util.function.Supplier;
+import java.util.UUID;
 
 import espcraft.EspcraftMod;
 
@@ -94,7 +93,9 @@ public class EspcraftModVariables {
 	public static class MapVariables extends SavedData {
 		public static final String DATA_NAME = "espcraft_mapvars";
 		public String version = "v.2.1.2";
-		public String Value = "";
+		public String UUID = "\"\"";
+		public String Channel = "\"\"";
+		public String Power = "\"\"";
 
 		public static MapVariables load(CompoundTag tag) {
 			MapVariables data = new MapVariables();
@@ -104,13 +105,17 @@ public class EspcraftModVariables {
 
 		public void read(CompoundTag nbt) {
 			version = nbt.getString("version");
-			Value = nbt.getString("Value");
+			UUID = nbt.getString("UUID");
+			Channel = nbt.getString("Channel");
+			Power = nbt.getString("Power");
 		}
 
 		@Override
 		public CompoundTag save(CompoundTag nbt) {
 			nbt.putString("version", version);
-			nbt.putString("Value", Value);
+			nbt.putString("UUID", UUID);
+			nbt.putString("Channel", Channel);
+			nbt.putString("Power", Power);
 			return nbt;
 		}
 
